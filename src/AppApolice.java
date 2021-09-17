@@ -24,14 +24,14 @@ public class AppApolice {
         cliente2.setIdade(input.nextInt());
         System.out.println("Digite o valor do premio do segurado: ");
         cliente2.setValorPremio(input.nextDouble());
+        input.nextLine();
 
 
         //Impressao dados construtor 2
         System.out.println("Dados Apolice: " + cliente2.imprimirDadosApolice());
         System.out.println("Valor do Premio de acordo com Idade: "+cliente2.calculaValorApoliceIdade());
         System.out.println("Digite a cidade do segurado");
-        cliente2.calculaDescontoCidade(input.next());
+        cliente2.calculaDescontoCidade(input.nextLine());
         System.out.println("Valor Apolice Final (de acordo com cidade informada): "+cliente2.getValorPremio());
-
     }
 }
